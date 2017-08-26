@@ -1,0 +1,23 @@
+{
+  "name": "hash-equals",
+  "version": "0.0.1",
+  "description": "Timing attack safe string comparison",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/killara/hash-equals.git"
+  },
+  "keywords": [
+    "string-comparison",
+    "timing-attack-safe"
+  ],
+  "author": "Runrioter <runrioter@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/killara/hash-equals/issues"
+  },
+  "homepage": "https://github.com/killara/hash-equals#readme"
+}
