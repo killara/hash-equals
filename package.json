@@ -1,6 +1,6 @@
 {
   "name": "hash-equals",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Timing attack safe string comparison",
   "main": "index.js",
   "scripts": {
