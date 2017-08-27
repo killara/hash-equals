@@ -1,24 +1,26 @@
 'use strict';
 
+// Reimplement according to Brad Hill's Double HMAC pattern
+// https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2011/february/double-hmac-verification/
+
 const assert = require('assert');
+const crypto = require('crypto');
 
 const hashEquals = (answer, guess) => {
+
   assert(typeof answer === 'string' && typeof guess === 'string', 'both arguments should be strings');
 
-  const len = answer.length;
+  const rb = crypto.pseudoRandomBytes(32);
+  const ahmac = crypto.createHmac('sha256', rb).update(answer).digest('hex');
+  const ghmac = crypto.createHmac('sha256', rb).update(guess).digest('hex');
 
-  let resultBits = 0;
+  const len = ahmac.length;
 
-  if (len !== guess.length) {
-    guess = answer;
-    resultBits = 1;
-  }
-
+  let result = 0;
   for (let i = 0; i < len; ++i) {
-    resultBits |= (answer.charCodeAt(i) ^ guess.charCodeAt(i));
+    result |= (ahmac.charCodeAt(i) ^ ghmac.charCodeAt(i));
   }
-
-  return resultBits === 0;
+  return result === 0;
 };
 
 module.exports = hashEquals;
