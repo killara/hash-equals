@@ -1,6 +1,7 @@
 # hash-equals
 
 [![npm](https://img.shields.io/npm/v/hash-equals.svg)](https://www.npmjs.com/package/hash-equals)
+[![npm download](https://img.shields.io/npm/dt/hash-equals)](https://www.npmjs.com/package/hash-equals)
 [![Travis branch](https://img.shields.io/travis/killara/hash-equals/master.svg)](https://travis-ci.org/killara/hash-equals)
 [![Codecov branch](https://img.shields.io/codecov/c/github/killara/hash-equals/master.svg)](https://codecov.io/github/killara/hash-equals?branch=master)
 
