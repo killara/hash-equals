@@ -26,7 +26,7 @@
     "eslint": "^7.9.0",
     "eslint-config-egg": "^8.1.2",
     "eslint-plugin-jest": "^24.0.1",
-    "jest": "^26.4.2"
+    "jest": "^27.1.0"
   },
   "files": [
     "index.js"
