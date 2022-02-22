@@ -24,7 +24,7 @@
   "homepage": "https://github.com/killara/hash-equals#readme",
   "devDependencies": {
     "eslint": "^8.0.0",
-    "eslint-config-egg": "^9.0.0",
+    "eslint-config-egg": "^11.0.1",
     "eslint-plugin-jest": "^25.0.1",
     "jest": "^27.1.0"
   },
