@@ -1,6 +1,6 @@
 {
   "name": "hash-equals",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Timing attack safe string comparison",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.d.ts",
