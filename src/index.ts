@@ -1,12 +1,10 @@
-'use strict';
-
 // Reimplement according to Brad Hill's Double HMAC pattern
 // https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2011/february/double-hmac-verification/
 
-const assert = require('assert');
-const crypto = require('crypto');
+import assert from "assert"
+import crypto from "crypto"
 
-const hashEquals = (answer, guess) => {
+const hashEquals = (answer:string, guess:string) => {
 
   assert(typeof answer === 'string' && typeof guess === 'string', 'both arguments should be strings');
 
@@ -23,4 +21,4 @@ const hashEquals = (answer, guess) => {
   return result === 0;
 };
 
-module.exports = hashEquals;
+export default hashEquals

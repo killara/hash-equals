@@ -1,6 +1,4 @@
-'use strict';
-
-const hashEquals = require('.');
+import hashEquals from "./src"
 
 describe('hash-equals', () => {
   test('has correct comparison', () => {
@@ -10,7 +8,7 @@ describe('hash-equals', () => {
   });
 
   test('shoud have both string arguments', () => {
-    expect(() => hashEquals(null, 'hash-equals')).toThrow(/both arguments should be strings/);
-    expect(() => hashEquals(null, undefined)).toThrow(/both arguments should be strings/);
+    expect(() => hashEquals(null as unknown as string, 'hash-equals')).toThrow(/both arguments should be strings/);
+    expect(() => hashEquals(null as unknown as string, undefined as unknown as string)).toThrow(/both arguments should be strings/);
   });
 });
